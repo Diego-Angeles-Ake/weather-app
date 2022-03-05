@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Loading from './components/Loading';
+import Weather from './components/Weather';
+import ServerError from './components/ServerError';
+import useWeatherData from './hooks/useWeatherData';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const { isLoading, serverError, apiData, bg, icon } = useWeatherData();
+  // console.count(apiData);
+  if (isLoading && !serverError) {
+    return (
+      <div className='App'>
+        <Loading></Loading>
+      </div>
+    );
+  } else if (apiData && !isLoading) {
+    return (
+      <div className={`App i${bg}`}>
+        <Weather apiData={apiData} icon={icon}></Weather>
+      </div>
+    );
+  } else {
+    return (
+      <div className='App'>
+        {serverError && <ServerError serverError={serverError} />}
+      </div>
+    );
+  }
 }
 
 export default App;

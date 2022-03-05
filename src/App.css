@@ -1,38 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.i01d {
+  background: url(./backgrounds/clear-sky-day.jpg);
+  background-size: cover;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.i01n {
+  background: url(./backgrounds/clear-sky-night.jpg);
+  background-size: cover;
+}
+.i02d {
+  background: url(./backgrounds/cloudy-sky-day.jpg);
+  background-size: cover;
+}
+.i02n {
+  background: url(./backgrounds/cloudy-sky-night.jpg);
+  background-size: cover;
+}
+.i03d {
+  background: url(./backgrounds/cloudy-sky-day.jpg);
+  background-size: cover;
+}
+.i03n {
+  background: url(./backgrounds/cloudy-sky-night.jpg);
+  background-size: cover;
+}
+.i04d {
+  background: url(./backgrounds/cloudy-sky-day.jpg);
+  background-size: cover;
+}
+.i04n {
+  background: url(./backgrounds/cloudy-sky-night.jpg);
+  background-size: cover;
+}
+.i09d {
+  background: url(./backgrounds/rain-storm.jpg);
+  background-size: cover;
+}
+.i09n {
+  background: url(./backgrounds/rain-storm.jpg);
+  background-size: cover;
+}
+.i10d {
+  background: url(./backgrounds/rain-storm.jpg);
+  background-size: cover;
+}
+.i10n {
+  background: url(./backgrounds/rain-storm.jpg);
+  background-size: cover;
+}
+.i11d {
+  background: url(./backgrounds/rain-storm.jpg);
+  background-size: cover;
+}
+.i11n {
+  background: url(./backgrounds/rain-storm.jpg);
+  background-size: cover;
+}
+.i13d {
+  background: url(./backgrounds/snow-day.jpg);
+  background-size: cover;
+}
+.i13n {
+  background: url(./backgrounds/snow-night.jpg);
+  background-size: cover;
+}
+.i50d {
+  background: url(./backgrounds/mist.jpg);
+  background-size: cover;
+}
+.i50n {
+  background: url(./backgrounds/mist.jpg);
+  background-size: cover;
 }

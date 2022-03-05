@@ -1,0 +1,24 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background-color: lightblue;
+}
+.wrapper-loading {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 5vmin 0;
+}
+img {
+  max-width: 100%;
+  width: 50vmin;
+}
