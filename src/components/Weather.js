@@ -52,7 +52,7 @@ export default function Weather({ apiData, icon }) {
                 setIsFarenheit(!isFarenheit);
               }}
             >
-              {isFarenheit ? 'Celsius' : 'Farenheit'}
+              {isFarenheit ? 'Celsius' : 'Fahrenheit'}
             </button>
           </div>
         </div>
