@@ -17,7 +17,6 @@ function useWeatherData() {
         const resp = await axios.get(url);
         const data = await resp?.data;
 
-        console.dir(data);
         setApiData(data);
         setIsLoading(false);
         setBg(data.weather[0].icon);
